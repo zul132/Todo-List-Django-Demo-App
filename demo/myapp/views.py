@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+# Create your views here. Views can be created for different routes that we can access on our website
+def home(request):
+    return HttpResponse("Hello World!")
